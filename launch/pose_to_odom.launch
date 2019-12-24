@@ -1,0 +1,14 @@
+<!--
+Launch file for testing purposes
+-->
+
+<launch>
+
+  <node name="pose_to_odom" pkg="pose_modifier" type="pose_to_odom.py" >
+    <param name="pose_topic_in"       value="slam_out_pose" />
+        
+    <param name="odom_topic_out"      value="slam/odom" />
+    <param name="child_frame_id"      value="scanmatcher_frame" />
+
+  </node>
+</launch>

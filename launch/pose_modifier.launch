@@ -1,0 +1,12 @@
+<!--
+Launch file for testing purposes
+-->
+
+<launch>
+
+  <node name="pose_add_covariance" pkg="pose_modifier" type="pose_add_covariance.py" >
+    <param name="pose_topic_in"       value="slam_out_pose" />        
+    <param name="pose_topic_out"      value="slam_out_pose_mod" />
+
+  </node>
+</launch>
